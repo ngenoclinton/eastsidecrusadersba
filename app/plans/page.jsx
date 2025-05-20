@@ -30,19 +30,13 @@ export default function PlansPage() {
             <h1 className="text-4xl font-bold text-white mb-6 md:mb-0">
               Choose your <span className="text-green-500">pricing plan</span>
             </h1>
-            <Image
-              src="/images/logo.png"
-              alt="Eastside Crusaders Logo"
-              width={80}
-              height={80}
-              className="h-20 w-auto"
-            />
+            <Image src="/logo2.png" alt="Eastside Crusaders Logo" width={450} height={450} className="h-56 w-56" />
           </div>
         </div>
       </section>
 
       {/* Plans Section */}
-      <section className="py-16 bg-black">
+      <section className="pb-16 bg-black">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {plans.map((plan, index) => (
@@ -54,7 +48,7 @@ export default function PlansPage() {
                 <p className="text-center mb-3">{plan.period}</p>
                 <p className="text-center mb-8 text-gray-400 h-16">{plan.details}</p>
                 <button className="w-full bg-red-600 text-white py-3 hover:bg-red-700 transition-colors mb-4">
-                  {plan.buttonText}
+                  {/* {plan.buttonText} */}
                 </button>
                 {plan.note && <p className="text-center text-sm text-gray-400">{plan.note}</p>}
               </div>

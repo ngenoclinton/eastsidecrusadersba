@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src="/logo.jpg"
               alt="Eastside Crusaders Logo"
               width={50}
               height={50}
@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
+          <nav className="hidden md:flex items-center space-x-10 pr-8">
             <Link href="/" className="nav-link-enhanced">
               ABOUT
             </Link>
