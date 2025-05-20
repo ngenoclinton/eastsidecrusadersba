@@ -1,5 +1,7 @@
+import VideoBackground from "@/components/VideoBackground"
 import Image from "next/image"
 import Link from "next/link"
+// import VideoBackground from "@/components/video-background"
 
 export default function Home() {
   return (
@@ -7,11 +9,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden lg:ml-12">
         <div className="absolute inset-0 z-0">
-          <video autoPlay muted loop playsInline className="absolute w-full h-full object-cover">
-            <source src="/EastsideCrusadersBA.mp4" type="video/mp4" />
-          </video>
+          <VideoBackground src="/EastsideCrusadersBA.mp4" poster="/placeholder.svg?height=1080&width=1920" />
           {/* Background color overlay with opacity */}
-          <div className="absolute inset-0 bg-black/70 bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative z-10 flex flex-col justify-center h-full container mx-auto px-8">
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-start mb-8 md:pl-4">
@@ -22,6 +22,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 className="lg:w-80 lg:h-72 max-w-[180px] md:max-w-[250px]"
+                priority
               />
             </div>
             <div className="md:ml-6 flex items-center">
@@ -40,7 +41,7 @@ export default function Home() {
           </div>
           <div className="max-w-3xl mx-auto md:mx-0 md:pl-4">
             <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
-             Welcome to Eastside Crusaders, your premier destination for basketball excellence! If you have a passion
+              Welcome to Eastside Crusaders, your premier destination for basketball excellence! If you have a passion
               for the game and a desire to take your skills to the next level, you&#39;ve come to the right place. Our
               basketball coaching academy is dedicated to nurturing talent, developing potential, and building a
               community of enthusiastic players who share a love for the sport.
@@ -49,13 +50,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+     {/* About Section */}
       <section className="py-16 bg-black lg:mt-12">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-green-500 mb-8">ABOUT US</h2>
-            <p className="text-base md:text-lg leading-relaxed mb-10">
-               At Eastside Crusaders, we believe that basketball is more than just a game; it&#39;s a lifestyle. Whether
+            <h2 className="text-2xl md:text-3xl font-bold text-green-500 mb-6">ABOUT US</h2>
+            <p className="text-base md:text-lg leading-relaxed mb-6">
+              At Eastside Crusaders, we believe that basketball is more than just a game; it&#39;s a lifestyle. Whether
               you&#39;re a beginner stepping onto the court for the first time or an advanced player striving for a
               competitive edge, our comprehensive programs cater to all skill levels and age groups.
             </p>

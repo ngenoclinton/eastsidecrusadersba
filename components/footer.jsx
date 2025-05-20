@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Eastside Crusaders. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} <Link href="https://www.irobtechnologies.com/" target="_blank">iRob Technologies</Link>. All rights reserved.</p>
         </div>
       </div>
     </footer>
