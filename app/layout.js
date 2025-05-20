@@ -1,8 +1,9 @@
 import  React from "react"
 import { Poppins } from "next/font/google"
 import "./globals.css"
-import Navbar from "@/components/navbar"
+// import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import Navbar from "@/components/Navbar"
 
 const poppins = Poppins({
   subsets: ["latin"],
