@@ -3,24 +3,24 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <>
-      {/* Hero Section */}
-      <section className="relative h-screen w-full overflow-hidden">
+    <div div className=" ">
+       {/* Hero Section */}
+      <section className="relative h-screen overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <video autoPlay muted loop playsInline className="absolute w-full h-full object-cover">
             <source src="/EastsideCrusadersBA.mp4" type="video/mp4" />
           </video>
           {/* Background color overlay with opacity */}
-          <div className="absolute inset-0 bg-black/70 bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-black/50 bg-opacity-40"></div>
         </div>
         <div className="relative z-10 flex flex-col justify-center h-full container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-start mb-8">
             <div className="w-full md:w-auto mb-6 md:mb-0 flex justify-center md:justify-start">
               <Image
-                src="/images/logo.png"
+                src="/logo2.png"
                 alt="Eastside Crusaders Logo"
-                width={300}
-                height={300}
+                width={350}
+                height={350}
                 className="w-auto h-auto max-w-[180px] md:max-w-[250px]"
               />
             </div>
@@ -45,14 +45,14 @@ export default function Home() {
               basketball coaching academy is dedicated to nurturing talent, developing potential, and building a
               community of enthusiastic players who share a love for the sport.
             </p>
-            <div className="flex flex-wrap gap-4 mt-6">
+            {/* <div className="flex flex-wrap gap-4 mt-6">
               <Link href="/services" className="bg-green-600 text-white px-6 py-3 hover:bg-green-700 transition-colors">
                 Our Services
               </Link>
               <Link href="#contact" className="bg-red-600 text-white px-6 py-3 hover:bg-red-700 transition-colors">
                 Contact Us
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -86,6 +86,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }

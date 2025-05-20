@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.jpg"
+              src="/images/logo.png"
               alt="Eastside Crusaders Logo"
               width={50}
               height={50}
