@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen w-full overflow-hidden lg:ml-12">
+      <section className="relative h-screen w-full overflow-hidden lg:pl-12">
         <div className="absolute inset-0 z-0">
           <VideoBackground src="/EastsideCrusadersBA.mp4" poster="/placeholder.svg?height=1080&width=1920" />
           {/* Background color overlay with opacity */}
@@ -50,11 +50,12 @@ export default function Home() {
         </div>
       </section>
 
-     {/* About Section */}
+     
+      {/* About Section */}
       <section className="py-16 bg-black lg:mt-12">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-green-500 mb-6">ABOUT US</h2>
+            <h2 className="text-2xl md:text-3xl font-bebas text-green-500 mb-6 tracking-wider">ABOUT US</h2>
             <p className="text-base md:text-lg leading-relaxed mb-6">
               At Eastside Crusaders, we believe that basketball is more than just a game; it&#39;s a lifestyle. Whether
               you&#39;re a beginner stepping onto the court for the first time or an advanced player striving for a
@@ -62,14 +63,14 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
               <div className="border-l-4 border-green-500 pl-6">
-                <h3 className="text-xl font-bold mb-3">Our Mission</h3>
+                <h3 className="text-xl font-bebas mb-3 tracking-wider">OUR MISSION</h3>
                 <p className="text-gray-300 leading-relaxed">
                   To provide exceptional basketball training that develops not just skills, but character, teamwork, and
                   a lifelong passion for the game.
                 </p>
               </div>
               <div className="border-l-4 border-green-500 pl-6">
-                <h3 className="text-xl font-bold mb-3">Our Vision</h3>
+                <h3 className="text-xl font-bebas mb-3 tracking-wider">OUR VISION</h3>
                 <p className="text-gray-300 leading-relaxed">
                   To become the premier basketball academy that transforms players at all levels into confident,
                   skilled, and successful athletes.

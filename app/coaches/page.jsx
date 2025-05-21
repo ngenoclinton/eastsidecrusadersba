@@ -11,7 +11,7 @@ export default function CoachesPage() {
         "Jermaine is passionate about sports and applies behavioral, motivational, and different exercise strategies to keep his sessions fun and engaging. As a sportsman, Jermaine knows first-hand the physical and mental health benefits of being active and part of a team. Sport is an amazing way to let off steam and meet new friends.",
         "Through coaching and mentoring, the ambition is to guide players & students to help them grow into well-rounded individuals. Working with novice youngsters to elite athletes, he envisions inspiring growth in the character and confidence of every individual he teaches and is excited to bring his experience to the Academy.",
       ],
-      image: "/logo2.png",
+      image: "/logo.jpg",
     },
     {
       name: "HAROLD EJELE",
@@ -22,7 +22,7 @@ export default function CoachesPage() {
         "Harold has an avid interest in sports, particularly strong expertise when it comes to basketball holistically. He is the Eastside Crusaders Head Coach for the 23/24 season and leads our coaching sessions on a weekly basis.",
         "Basketball has been a fundamental part of his life, keeping him grounded, focused, and efficient in activities beyond the court. He has a passion for the game and is keen to pass on his teachings to aspiring athletes - kids, youth, and adults.",
       ],
-      image: "/logo2.png",
+      image: "/logo.jpg",
     },
   ]
 
@@ -47,13 +47,13 @@ export default function CoachesPage() {
             {coaches.map((coach, index) => (
               <div key={index} className="bg-black p-8 transform transition-transform hover:-translate-y-2">
                 <div className="flex justify-center mb-6">
-                  {/* <Image
+                  <Image
                     src={coach.image || "/placeholder.svg"}
                     alt={coach.name}
                     width={120}
                     height={120}
-                    className="w-auto h-auto"
-                  /> */}
+                    className="w-auto h-auto rounded-full"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-center">{coach.name}</h3>
                 <p className="text-green-500 mb-4 text-center">{coach.position}</p>

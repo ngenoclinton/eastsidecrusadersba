@@ -18,6 +18,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        bebas: ["var(--font-bebas)"],
+        oswald: ["var(--font-oswald)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -64,10 +68,8 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      fontFamily: {
-        sans: ["var(--font-poppins)"],
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-};
+} 
+export default config

@@ -63,9 +63,11 @@ const Footer = () => {
           <ContactForm />
         </div>
 
-        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} <Link href="https://www.irobtechnologies.com/" target="_blank">iRob Technologies</Link>. All rights reserved.</p>
+        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-400 flex justify-between">
+          <p>&copy; {new Date().getFullYear()} Eastside Crusaders. All rights reserved.</p>
+          <p >Powered by <Link href="https://www.irobtechnologies.com/" target="_blank" className="text-green-500">iRob Technologies.</Link></p>
         </div>
+
       </div>
     </footer>
   )
