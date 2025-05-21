@@ -96,23 +96,23 @@ export default function ServicesPage() {
                 <ul className="space-y-3 text-white">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte" >Warm-up and stretching</span>
+                    <span className="text-white" >Warm-up and stretching</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Skill development drills</span>
+                    <span className="text-white">Skill development drills</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Tactical training</span>
+                    <span className="text-white">Tactical training</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Scrimmage games</span>
+                    <span className="text-white">Scrimmage games</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Cool down and feedback</span>
+                    <span className="text-white">Cool down and feedback</span>
                   </li>
                 </ul>
               </div>
@@ -124,19 +124,19 @@ export default function ServicesPage() {
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Basketball shoes</span>
+                    <span className="text-white">Basketball shoes</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Water bottle</span>
+                    <span className="text-white">Water bottle</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Comfortable athletic clothing</span>
+                    <span className="text-white">Comfortable athletic clothing</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-whte">Towel</span>
+                    <span className="text-white">Towel</span>
                   </li>
                 </ul>
               </div>
