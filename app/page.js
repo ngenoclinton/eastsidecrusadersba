@@ -56,22 +56,22 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bebas text-green-500 mb-6 tracking-wider">ABOUT US</h2>
-            <p className="text-base md:text-lg leading-relaxed mb-6">
+            <p className="text-base md:text-lg leading-relaxed mb-6 text-white">
               At Eastside Crusaders, we believe that basketball is more than just a game; it&#39;s a lifestyle. Whether
               you&#39;re a beginner stepping onto the court for the first time or an advanced player striving for a
               competitive edge, our comprehensive programs cater to all skill levels and age groups.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left text-white">
               <div className="border-l-4 border-green-500 pl-6">
-                <h3 className="text-xl font-bebas mb-3 tracking-wider">OUR MISSION</h3>
+                <h3 className="text-xl font-bebas mb-3 tracking-wider text-green-500 ">OUR MISSION</h3>
                 <p className="text-gray-300 leading-relaxed">
                   To provide exceptional basketball training that develops not just skills, but character, teamwork, and
                   a lifelong passion for the game.
                 </p>
               </div>
               <div className="border-l-4 border-green-500 pl-6">
-                <h3 className="text-xl font-bebas mb-3 tracking-wider">OUR VISION</h3>
-                <p className="text-gray-300 leading-relaxed">
+                <h3 className="text-xl font-bebas mb-3 tracking-wider text-green-500">OUR VISION</h3>
+                <p className="text-gray-300 leading-relaxed ">
                   To become the premier basketball academy that transforms players at all levels into confident,
                   skilled, and successful athletes.
                 </p>
