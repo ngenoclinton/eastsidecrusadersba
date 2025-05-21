@@ -58,12 +58,12 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-center">
+                  <h3 className="text-xl text-white font-bold mb-2 text-center">
                     {service.title}
                   </h3>
-                  <p className="text-center mb-3">{service.schedule}</p>
+                  <p className="text-center text-white mb-3">{service.schedule}</p>
                   <div className="border-t border-gray-800 my-4"></div>
-                  <p className="text-center text-2xl font-bold mb-4">
+                  <p className="text-center text-white text-2xl font-bold mb-4">
                     {service.price}
                   </p>
                   <div className="text-center">
@@ -85,34 +85,34 @@ export default function ServicesPage() {
       <section className="py-16 bg-black border-t border-green-800">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl md:text-2xl font-bold mb-8 text-center">
+            <h2 className="text-xl text-white md:text-2xl font-bold mb-8 text-center">
               WHAT TO EXPECT
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div className="bg-black p-6 border border-green-800">
+              <div className="bg-black text-white p-6 border border-green-800">
                 <h3 className="text-xl font-bold mb-4 text-green-500">
                   Training Sessions Include
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Warm-up and stretching</span>
+                    <span className="text-whte" >Warm-up and stretching</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Skill development drills</span>
+                    <span className="text-whte">Skill development drills</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Tactical training</span>
+                    <span className="text-whte">Tactical training</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Scrimmage games</span>
+                    <span className="text-whte">Scrimmage games</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Cool down and feedback</span>
+                    <span className="text-whte">Cool down and feedback</span>
                   </li>
                 </ul>
               </div>
@@ -124,19 +124,19 @@ export default function ServicesPage() {
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Basketball shoes</span>
+                    <span className="text-whte">Basketball shoes</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Water bottle</span>
+                    <span className="text-whte">Water bottle</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Comfortable athletic clothing</span>
+                    <span className="text-whte">Comfortable athletic clothing</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span>Towel</span>
+                    <span className="text-whte">Towel</span>
                   </li>
                 </ul>
               </div>
