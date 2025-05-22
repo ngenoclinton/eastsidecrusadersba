@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function CoachesPage() {
   const coaches = [
@@ -11,7 +12,7 @@ export default function CoachesPage() {
         "Jermaine is passionate about sports and applies behavioral, motivational, and different exercise strategies to keep his sessions fun and engaging. As a sportsman, Jermaine knows first-hand the physical and mental health benefits of being active and part of a team. Sport is an amazing way to let off steam and meet new friends.",
         "Through coaching and mentoring, the ambition is to guide players & students to help them grow into well-rounded individuals. Working with novice youngsters to elite athletes, he envisions inspiring growth in the character and confidence of every individual he teaches and is excited to bring his experience to the Academy.",
       ],
-      image: "/logo.jpg",
+      image: "/Coach-Jermaine_CEO&Founder.jpg",
     },
     {
       name: "HAROLD EJELE",
@@ -22,7 +23,7 @@ export default function CoachesPage() {
         "Harold has an avid interest in sports, particularly strong expertise when it comes to basketball holistically. He is the Eastside Crusaders Head Coach for the 23/24 season and leads our coaching sessions on a weekly basis.",
         "Basketball has been a fundamental part of his life, keeping him grounded, focused, and efficient in activities beyond the court. He has a passion for the game and is keen to pass on his teachings to aspiring athletes - kids, youth, and adults.",
       ],
-      image: "/logo.jpg",
+      image: "/Harold_coach.jpg",
     },
   ]
 
@@ -50,8 +51,8 @@ export default function CoachesPage() {
                   <Image
                     src={coach.image || "/placeholder.svg"}
                     alt={coach.name}
-                    width={120}
-                    height={120}
+                    width={150}
+                    height={150}
                     className="w-auto h-auto rounded-full"
                   />
                 </div>
@@ -101,6 +102,100 @@ export default function CoachesPage() {
           </div>
         </div>
       </section>
+
+
+
+      {/* Testimonials */}
+      <section className="py-16 bg-gray-900">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <h2 className="text-3xl font-bold mb-12 text-center text-white">WHAT OUR PLAYERS SAY</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[...Array(3)].map((_, index) => (
+              <div key={index} className="bg-black p-6 rounded-lg border border-gray-800">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg
+                      key={i}
+                      className="w-5 h-5 text-yellow-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-gray-300 mb-4 italic">
+                  "The coaching at Eastside Crusaders has completely transformed my game. I've improved more in 3 months
+                  than I did in the past 2 years."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 rounded-full bg-gray-700 mr-3"></div>
+                  <div>
+                    <h4 className="text-white font-bold">John D.</h4>
+                    <p className="text-gray-400 text-sm">Member since 2023</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+       {/* Our Community Section */}
+            {/* <section className="py-20 bg-black">
+              <div className="container mx-auto px-6 max-w-7xl">
+                <div className="text-center mb-12">
+                  <div className="flex justify-center space-x-1 mb-4">
+                    <span className="text-red-600 text-2xl">★</span>
+                    <span className="text-red-600 text-2xl">★</span>
+                    <span className="text-red-600 text-2xl">★</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+                    AUTHENTIC, DEDICATED
+                    <br />
+                    PLAYERS
+                  </h2>
+                  <Link
+                    href="https://instagram.com/eastside_crusaders"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center border border-gray-600 px-6 py-3 text-white hover:bg-gray-900 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="mr-2"
+                    >
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    eastside_crusaders
+                  </Link>
+                </div>
+      
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {[...Array(8)].map((_, index) => (
+                    <div key={index} className="aspect-square relative overflow-hidden rounded-md">
+                      <Image
+                        src={`/placeholder.svg?height=400&width=400&text=Player${index + 1}`}
+                        alt={`Basketball player ${index + 1}`}
+                        fill
+                        className="object-cover hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section> */}
+      
     </>
   )
 }

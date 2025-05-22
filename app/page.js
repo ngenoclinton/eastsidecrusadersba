@@ -1,9 +1,31 @@
 import VideoBackground from "@/components/VideoBackground"
 import Image from "next/image"
 import Link from "next/link"
-// import VideoBackground from "@/components/video-background"
+import WhyCrusadersWorks from "@/components/why-crusaders-works"
+import Slider from "@/components/slider"
+import ItsScience from "@/components/its-science"
+import ItsFun from "@/components/its-fun"
+import ItsCommunity from "@/components/its-community"
 
 export default function Home() {
+  const sliderSlides = [
+    {
+      title: "INNOVATION",
+      content:
+        "Our innovative basketball training sessions are experience-backed, technology-led, and specifically developed to build skills, basketball IQ, and improve overall athletic performance.",
+    },
+    {
+      title: "MOTIVATION",
+      content:
+        "Our team mentality helps you to stay motivated, creates accountability and fosters a real community atmosphere based on a no-ego attitude.",
+    },
+    {
+      title: "RESULTS",
+      content:
+        "Our training program is designed to work and deliver results for everyone, regardless of where you're at in your basketball journey.",
+    },
+  ]
+
   return (
     <>
       {/* Hero Section */}
@@ -46,14 +68,21 @@ export default function Home() {
               basketball coaching academy is dedicated to nurturing talent, developing potential, and building a
               community of enthusiastic players who share a love for the sport.
             </p>
+            <div className="flex flex-wrap gap-4 mt-6">
+              <Link href="/services" className="bg-green-600 text-white px-6 py-3 hover:bg-green-700 transition-colors">
+                Our Services
+              </Link>
+              <Link href="#contact" className="bg-red-600 text-white px-6 py-3 hover:bg-red-700 transition-colors">
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-     
       {/* About Section */}
       <section className="py-16 bg-black lg:mt-12">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 max-w-6xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bebas text-green-500 mb-6 tracking-wider">ABOUT US</h2>
             <p className="text-base md:text-lg leading-relaxed mb-6 text-white">
@@ -80,6 +109,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Why Crusaders Works Section */}
+      <WhyCrusadersWorks />
+
+      {/* Slider Section */}
+      <Slider slides={sliderSlides} heading="WHAT IS CRUSADERS TRAINING?" autoSlideInterval={6000} />
+
+      {/* It's Science Section */}
+      <ItsScience />
+
+      {/* It's Fun Section */}
+      <ItsFun />
+
+      {/* It's Community Section */}
+      <ItsCommunity />
     </>
   )
 }
